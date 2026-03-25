@@ -1,1 +1,21 @@
-spring.application.name: rest-with-spring
+spring:
+  application:
+    name: rest-with-spring
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/appdb
+    username: andre
+    password: 123456
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    open-in-view: false
+logging:
+  level:
+    root: WARN
